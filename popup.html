@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.min.css" />
+  </head>
+  <div id="top-bar">
+    <div id="title-left">
+      <h1>Zendo</h1>
+    </div>
+
+    <div id="top-buttons">
+      <button id="help-button" title="Help">❔</button>
+      <button id="settings-button" title="Settings">⚙️</button>
+    </div>
+  </div>
+
+  <body>
+    <div id="main-view">
+      <input id="new-group" type="text" placeholder="New group..." />
+      <ul id="group-list"></ul>
+    </div>
+
+    <div id="group-view" style="display: none">
+      <div id="task-header">
+        <button id="back-button" title="Go back to groups" aria-label="Back">
+          ⏴
+        </button>
+        <div
+          id="group-name-wrapper"
+          style="display: flex; align-items: center; gap: 6px; flex-grow: 1"
+        >
+          <h3 id="current-group-name" style="margin: 0"></h3>
+          <button
+            id="edit-group-name"
+            style="border: none"
+            title="Edit group name"
+          ></button>
+        </div>
+
+        <button
+          id="clear-completed"
+          title="Clear all completed tasks"
+          aria-label="Clear all"
+        >
+          🗑️
+        </button>
+      </div>
+      <h1 id="group-title"></h1>
+      <input id="new-task" type="text" placeholder="Add a task..." />
+      <ul id="task-list"></ul>
+    </div>
+
+    <div id="help-modal" style="display: none">
+      <button id="close-help" title="Close help">×</button>
+      <strong>How to Use Zendo</strong>
+      <ul>
+        <li>Type to add tasks or groups then press ENTER</li>
+        <li>Click ✎ to edit, 🗐 to copy</li>
+        <li>Drag and drop to reorder tasks or groups</li>
+        <li>Set colors via priority selector</li>
+        <li>Click on a task to mark complete</li>
+      </ul>
+    </div>
+
+    <script src="popup.min.js" defer></script>
+  </body>
+</html>

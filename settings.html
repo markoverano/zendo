@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zendo Settings</title>
+    <link rel="stylesheet" href="settings.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Zendo</h1>
+            <div id="kofi-widget">
+                <a href='https://ko-fi.com/T6T11G2CYS' target='_blank'><img height='36' style='border:0px;height:36px;'
+                        src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0'
+                        alt='Buy Me a Coffee at ko-fi.com' /></a>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="options">Options</button>
+            <button class="tab" data-tab="history">Version History</button>
+        </div>
+
+        <div class="tab-content" id="options">
+            <label>Extension popup width (px):
+                <input type="number" id="width" min="300" max="800" />
+            </label>
+            <label>Font size for groups & tasks (px):
+                <input type="number" id="fontSize" min="10" max="32" />
+            </label>
+            <label>Priority 1 color:
+                <input type="color" id="color1" />
+            </label>
+            <label>Priority 2 color:
+                <input type="color" id="color2" />
+            </label>
+            <label>Priority 3 color:
+                <input type="color" id="color3" />
+            </label>
+
+            <div class="button-group">
+                <button id="save">Save</button>
+                <button id="reset">Restore Default</button>
+                <span id="status"></span>
+            </div>
+        </div>
+
+        <div class="tab-content" id="history" style="display:none;">
+            <ul>
+                <li><strong>v1.0</strong> – Initial release</li>
+            </ul>
+            <p style="margin-top: 20px; font-size: 13px; text-align: center;">
+                <a href="privacy.html" target="_blank">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="settings.min.js"></script>
+</body>

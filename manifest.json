@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Zendo",
+  "version": "1.0",
+  "description": "Minimalist to-do list with task grouping, drag-and-drop, and color priorities.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/zendo_logo16.png",
+      "32": "icons/zendo_logo32.png",
+      "48": "icons/zendo_logo48.png",
+      "128": "icons/zendo_logo128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/zendo_logo128.png"
+  },
+  "permissions": ["storage"],
+  "options_page": "settings.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/zendo_logo1024.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
