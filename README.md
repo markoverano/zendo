@@ -21,7 +21,7 @@ Zendo is available on the [Chrome Web Store](https://chrome.google.com/webstore)
 
 Zendo does **not collect or transmit** any personal data. You can view the full privacy policy here:
 
-[Privacy Policy](https://yourusername.github.io/zendo/privacy.html)
+> Note: This repository contains a minified build of the Zendo extension for transparency and Web Store compliance. The full source code is not publicly available.
 
 ---
 
